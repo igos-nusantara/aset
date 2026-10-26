@@ -4,36 +4,44 @@
   <img src="logo/small-transparent.svg" alt="Logo IGOS Nusantara" width="180">
 </div>
 
-Repo aset resmi logo dan ikon [IGOS Nusantara (IGN)](https://igos-nusantara.or.id/) — sistem operasi yang dikembangkan komunitas sejak 2006. Repo ini tidak berisi kode, hanya berkas gambar.
+Repositori resmi untuk aset logo dan ikon visual [IGOS Nusantara (IGN)](https://igos-nusantara.or.id/), sistem operasi sumber terbuka yang dikembangkan bersama komunitas sejak 2006. Repositori ini didedikasikan untuk pengelolaan dan penyediaan berkas aset grafis resmi.
 
-## Isi repo
+## Struktur dan Varian Berkas
 
-Semua logo ada di `logo/`, dinamai dengan pola `[ukuran]-[varian].[ext]`. Arti tiap varian (tak bisa ditebak dari nama berkasnya):
+Semua berkas logo berada pada direktori `logo/` dengan konvensi penamaan `[ukuran]-[varian].[format]`.
 
-| Varian | Pakai untuk |
+### Varian Logo
+
+| Varian | Peruntukan |
 |---|---|
-| `large*` | tampilan besar dan cetak (resolusi tinggi) |
-| `small*` | web dan antarmuka (berkas ringan) |
-| `*transparent*` | latar gelap atau berwarna (tanpa latar putih) |
-| `*no-border*` | tanpa cincin bingkai di tepi lingkaran |
+| `large*` | Kebutuhan resolusi tinggi (cetak, banner, media fisik) |
+| `small*` | Kebutuhan digital (web, antarmuka aplikasi, dokumen) |
+| `*transparent*` | Latar transparan (cocok untuk latar belakang gelap atau berwarna) |
+| `*no-border*` | Tanpa garis bingkai lingkaran luar |
 
-Varian saling menggabung: `large-no-border-transparent.png` berarti besar + tanpa bingkai + tanpa latar. Format tersedia JPEG, PNG, dan SVG.
+Varian dapat dikombinasikan. Sebagai contoh, `large-no-border-transparent.png` adalah varian berukuran besar, tanpa bingkai lingkaran luar, dengan latar transparan. Format berkas yang tersedia meliputi JPEG, PNG, dan SVG.
 
-`logo/icons/hicolor/` bukan koleksi logo lain — ini struktur ikon [freedesktop icon theme](https://specifications.freedesktop.org/icon-theme-spec/latest/) (`hicolor/<ukuran>/apps/ign.png`, ukuran 16–1024 px plus `scalable/apps/ign.svg`), dipasang di `/usr/share/icons/hicolor/` agar ikon IGN muncul di menu aplikasi.
+### Ikon Sistem Desktop (freedesktop.org)
 
-## Memakai aset
+Direktori `logo/icons/hicolor/` menyediakan kumpulan ikon yang mengikuti spesifikasi [freedesktop.org Icon Theme](https://specifications.freedesktop.org/icon-theme-spec/latest/):
 
-1. **Pilih varian** dari tabel di atas sesuai konteks tampilannya.
-2. **Sertakan kredit** di dekat logo (atribusi CC BY-SA):
+- Ukuran bitmap: `hicolor/<ukuran>/apps/ign.png` (mulai dari 16×16 hingga 1024×1024 piksel).
+- Vektor terukur: `hicolor/scalable/apps/ign.svg`.
+
+Kumpulan berkas ini disiapkan untuk dipasang pada direktori sistem `/usr/share/icons/hicolor/` agar ikon aplikasi IGOS Nusantara dapat dikenali dan ditampilkan secara tepat oleh lingkungan desktop Linux.
+
+## Panduan Penggunaan
+
+1. **Pilih Varian**: Sesuaikan resolusi dan varian grafis berdasarkan media target (cetak atau digital).
+2. **Atribusi**: Berikan atribusi sesuai ketentuan lisensi CC BY-SA 4.0:
 
    > Logo IGOS Nusantara, © Proyek IGOS Nusantara — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## Lisensi
+## Lisensi dan Merek Dagang
 
-Berkas gambar di repo ini dilisensikan **CC BY-SA 4.0**. Sebelum memodifikasi atau mendistribusikan berkas, baca syarat lengkapnya di [LICENSE](LICENSE) — salinan apa adanya dari situs Creative Commons.
-
-Nama "IGOS Nusantara"/"IGN" dan logonya adalah merek dagang proyek — penggunaannya diatur dalam [TRADEMARK.md](TRADEMARK.md).
+- **Lisensi Konten Grafis**: Seluruh berkas grafis dalam repositori ini dilisensikan di bawah [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
+- **Kebijakan Merek Dagang**: Nama "IGOS Nusantara", singkatan "IGN", dan logo terkait merupakan merek dagang dari Proyek IGOS Nusantara. Lisensi hak cipta (CC BY-SA 4.0) tidak mencakup hak merek dagang. Penggunaan nama dan logo diatur secara terpisah dalam [TRADEMARK.md](TRADEMARK.md).
 
 ## Kontribusi
 
-Usulan logo baru, varian tambahan, atau perbaikan berkas: buka issue di repo ini.
+Untuk usulan varian baru, perbaikan berkas, atau pembaruan aset lainnya, silakan ajukan *issue* atau kirimkan *pull request* pada repositori ini.
