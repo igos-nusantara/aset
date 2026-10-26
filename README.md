@@ -32,6 +32,8 @@ Varian saling menggabung: `large-no-border-transparent.png` berarti besar + tanp
 
 Berkas gambar di repo ini dilisensikan **CC BY-SA 4.0**. Sebelum memodifikasi atau mendistribusikan berkas, baca syarat lengkapnya di [LICENSE](LICENSE) — salinan apa adanya dari situs Creative Commons.
 
+Nama "IGOS Nusantara"/"IGN" dan logonya adalah merek dagang proyek — penggunaannya diatur dalam [TRADEMARK.md](TRADEMARK.md).
+
 ## Kontribusi
 
 Usulan logo baru, varian tambahan, atau perbaikan berkas: buka issue di repo ini.
